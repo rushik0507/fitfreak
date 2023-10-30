@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calorie Calculator</title>
+    <script>
+      function calculateCalories() {
+        // Get user input
+        var gender = document.getElementById("gender").value;
+        var age = document.getElementById("age").value;
+        var weight = document.getElementById("weight").value;
+        var height = document.getElementById("height").value;
+        var activityLevel = parseFloat(
+          document.getElementById("activityLevel").value
+        );
+
+        // Calculate BMR
+        var bmr = 0;
+        if (gender === "male") {
+          bmr = 10 * weight + 6.25 * height - 5 * age + 5;
+        } else if (gender === "female") {
+          bmr = 10 * weight + 6.25 * height - 5 * age - 161;
+        }
+
+        // Adjust for activity level
+        var calorieIntake = bmr * activityLevel;
+
+        // Update UI
+        document.getElementById("result").textContent =
+          "Your estimated daily calorie intake is: " + calorieIntake.toFixed(2);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Calorie Calculator</h1>
+    <form>
+      <label for="gender">Gender:</label>
+      <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option></select
+      ><br /><br />
+
+      <label for="age">Age:</label>
+      <input type="text" id="age" /><br /><br />
+
+      <label for="weight">Weight (kg):</label>
+      <input type="text" id="weight" /><br /><br />
+
+      <label for="height">Height (cm):</label>
+      <input type="text" id="height" /><br /><br />
+
+      <label for="activityLevel">Activity Level:</label>
+      <select id="activityLevel">
+        <option value="1.2">Sedentary</option>
+        <option value="1.375">Lightly active</option>
+        <option value="1.55">Moderately active</option>
+        <option value="1.725">Very active</option>
+        <option value="1.9">Extra active</option></select
+      ><br /><br />
+
+      <button type="button" onclick="calculateCalories()">Calculate</button>
+    </form>
+
+    <div id="result"></div>
+  </body>
+</html>

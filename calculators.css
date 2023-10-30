@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  border: border-box;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.main {
+  background-color: #191a1c;
+  color: aliceblue;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+.tcolor {
+  color: #929da5;
+}
+/* navigation bar */
+.sidenav {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #1f2022;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  height: 10%;
+}
+
+.logo {
+  margin: 0px 5px 0px 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+.logo1 {
+  margin: 0px 5px 0px 0px;
+  width: 80px;
+  height: 80px;
+}
+.logo1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.logo-name span {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.nav-exercises {
+  display: flex;
+  padding: 15px;
+}
+.nav-routines {
+  display: flex;
+  padding: 15px;
+}
+.nav-calculators {
+  display: flex;
+  padding: 15px;
+}
+.nav-blogs {
+  display: flex;
+  padding: 15px;
+}
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+}
+
+.nav-section1 i {
+  padding: 5px 8px 0 0;
+}
+.nav-section2 {
+  padding: 20px;
+  border-top: 2px solid #929da5;
+  color: #929da5;
+}
+
+.res-sidenav {
+  height: 50px;
+  background-color: #1f2022;
+  display: none;
+}
+.rev-logo {
+  width: 20%;
+  height: 100%;
+  background-color: transparent;
+}
+.rev-logo img {
+  width: 50px;
+}
+.rev-button {
+  background-color: #929da5;
+  width: 20%;
+  height: 100%;
+}
+.rev-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+@media screen and (min-width: 850px) {
+  .sidenav {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 0.8rem;
+  }
+  .res-sidenav {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sidenav {
+    height: 100%;
+    width: 70%;
+    display: none;
+  }
+}
+.res-sidenav {
+  height: 50px;
+  background-color: #1f2022;
+  display: none;
+}
+.rev-logo {
+  width: 20%;
+  height: 100%;
+  background-color: transparent;
+}
+.rev-logo img {
+  width: 50px;
+}
+.rev-button {
+  background-color: #929da5;
+  width: 20%;
+  height: 100%;
+}
+.rev-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 850px) and (min-width: 550px) {
+  html {
+    font-size: 0.8rem;
+  }
+  .res-sidenav {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sidenav {
+    height: 100%;
+    width: 70%;
+    display: none;
+  }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Fitwiki</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="res-sidenav" id="res">
+        <div class="rev-logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <div class="rev-title"><span>Exercises</span></div>
+        <div class="rev-button"></div>
+      </div>
+      <div class="sidenav">
+        <div class="nav-logo">
+          <div class="logo">
+            <img src="./images/logo1.png" alt="" />
+          </div>
+          <div class="logo1">
+            <img src="./images/logo.png" alt="" />
+          </div>
+        </div>
+        <div class="nav-section">
+          <div class="nav-section1">
+            <div class="nav-exercises tcolor">
+              <i
+                class="fa-solid fa-dumbbell"
+                style="color: #929da5; padding: 5px 5px 0 0"
+              ></i>
+              <span>Exercises</span>
+            </div>
+            <div class="nav-routines tcolor">
+              <i class="fa-solid fa-table-list" style="color: #929da5"></i>
+              <span>Routines</span>
+            </div>
+            <a href="./calculators.html">
+              <div class="nav-calculators tcolor">
+                <i class="fa-solid fa-calculator" style="color: #929da5"></i>
+                <span>Calculators</span>
+              </div>
+            </a>
+            <div class="nav-blogs tcolor">
+              <i class="fa-solid fa-blog" style="color: #929da5"></i>
+              <span>Blogs</span>
+            </div>
+          </div>
+          <div class="nav-section2">
+            <div class="signin">
+              <i
+                class="fa-solid fa-circle-user"
+                style="color: #929da5; padding: 5px"
+              ></i>
+              <span>Sign In</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-mid">
+        <div class="main-title">Exercises</div>
+        <div class="mid">
+          <div class="mid-title">Select Muscle</div>
+          <div class="mid-image">
+            <img src="./images/muscle map.jfif" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="main-mid2">
+        <div class="main-title">Exercises</div>
+        <div class="mid2"></div>
+      </div>
+      <div class="sidebar">
+        <div class="side-main">
+          <div class="side-title">Library</div>
+          <div class="side-categories">
+            <select id="select-equipment">
+              <option value="All Equipment">All Equipment</option>
+              <option value="None">None</option>
+              <option value="Barbell">Barbell</option>
+              <option value="Dumbbell">Dumbbell</option>
+              <option value="Kettlebell">Kettlebell</option>
+              <option value="Machine">Machine</option>
+              <option value="Plate">Plate</option>
+              <option value="Resistance Band">Resistance Band</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="side-muscle">
+            <select id="select-muscle">
+              <option value="All Muscles">All Muscles</option>
+              <option value="Abdominals">Abdominals</option>
+              <option value="Abductors">Abductors</option>
+              <option value="Adductors">Adductors</option>
+              <option value="Biceps">Biceps</option>
+              <option value="Lower Back">Lower Back</option>
+              <option value="Upper Back">Upper Back</option>
+              <option value="Cardio">Cardio</option>
+              <option value="Chest">Chest</option>
+              <option value="Calves">Calves</option>
+              <option value="Forearms">Forearms</option>
+              <option value="Glutes">Glutes</option>
+              <option value="Hamstrings">Hamstrings</option>
+              <option value="Lats">Lats</option>
+              <option value="Quadriceps">Quadriceps</option>
+              <option value="Shoulders">Shoulders</option>
+              <option value="Triceps">Triceps</option>
+              <option value="Traps">Traps</option>
+              <option value="Neck">Neck</option>
+              <option value="Full Body">Full Body</option>
+            </select>
+          </div>
+          <div class="section-title tcolor"></div>
+          <div class="side-section">
+            <div class="side-exercise">
+              <div class="ex-image">
+                <img src="./images/Bench Press (Barbell).jpg" alt="" />
+              </div>
+              <div class="ex">
+                <div class="ex-name" id="exname">Bench Press (Barbell)</div>
+                <div class="ex-muscle">Chest</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./responsive.js"></script>
+  </body>
+</html>
