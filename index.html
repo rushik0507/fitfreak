@@ -28,7 +28,12 @@
         </div>
         <div class="rev-title"><span>Exercises</span></div>
         <div class="rev-button">
-          <i class="fa-solid fa-bars" style="color: #929da5"></i>
+          <i class="fa-solid fa-bars" id="open" style="color: #929da5"></i>
+          <i
+            class="fa-solid fa-xmark"
+            id="close"
+            style="color: #929da5; display: none"
+          ></i>
         </div>
       </div>
       <div class="sidenav">
@@ -93,7 +98,16 @@
       </div>
       <div class="sidebar">
         <div class="side-main">
-          <div class="side-title">Library</div>
+          <div class="side-title">
+            <span>Library</span>
+            <span
+              ><i
+                class="fa-solid fa-xmark"
+                id="sideclose"
+                style="color: #929da5"
+              ></i
+            ></span>
+          </div>
           <div class="side-categories">
             <select id="select-equipment">
               <option value="All Equipment">All Equipment</option>
