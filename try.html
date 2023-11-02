@@ -28,6 +28,22 @@
         document.getElementById("result").textContent =
           "Your estimated daily calorie intake is: " + calorieIntake.toFixed(2);
       }
+      function calculateBMI() {
+        var weightInput = document.getElementById("weights");
+        var heightInput = document.getElementById("heights");
+        var resultElement = document.getElementById("results");
+
+        var weight = parseFloat(weightInput.value);
+        var height = parseFloat(heightInput.value) / 100; // Convert height from cm to meters
+
+        if (weight && height) {
+          var bmi = weight / (height * height);
+          resultElement.textContent = "Your BMI is: " + bmi.toFixed(2); // Display BMI with two decimal places
+        } else {
+          resultElement.textContent =
+            "Please enter valid weight and height values.";
+        }
+      }
     </script>
   </head>
   <body>
@@ -61,5 +77,17 @@
     </form>
 
     <div id="result"></div>
+
+    <h1>BMI Calculator</h1>
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weights" step="0.01" />
+    <br />
+    <label for="height">Height (cm):</label>
+    <input type="number" id="heights" step="0.01" />
+    <br />
+    <button onclick="calculateBMI()">Calculate BMI</button>
+    <br />
+    <p id="results"></p>
   </body>
+  <!-- <script src="cloud.js"></script> -->
 </html>
