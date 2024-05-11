@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  border: border-box;
+  color: white;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.main {
+  background-color: #191a1c;
+  color: aliceblue;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+.tcolor {
+  color: #929da5;
+}
+/* navigation bar */
+.sidenav {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #1f2022;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  height: 10%;
+}
+
+.logo {
+  margin: 0px 5px 0px 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+.logo1 {
+  margin: 0px 5px 0px 0px;
+  width: 80px;
+  height: 80px;
+}
+.logo1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.logo-name span {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.nav-exercises {
+  display: flex;
+  padding: 15px;
+}
+.nav-routines {
+  display: flex;
+  padding: 15px;
+}
+.nav-calculators {
+  display: flex;
+  padding: 15px;
+}
+.nav-blogs {
+  display: flex;
+  padding: 15px;
+}
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+}
+
+.nav-section1 i {
+  padding: 5px 8px 0 0;
+}
+.nav-section2 {
+  padding: 20px;
+  border-top: 2px solid #929da5;
+  color: #929da5;
+}
+
+/* middle section */
+
+.main-mid {
+  width: 60%;
+  height: 100%;
+  background-color: #191a1c;
+  position: fixed;
+  display: block;
+  left: 15%;
+}
+
+.main-title {
+  margin: 10px 0 0 20px;
+  font-size: 1.5rem;
+}
+
+.mid,
+.mid2 {
+  margin: 20px;
+  background-color: #1f2022;
+  border-radius: 15px;
+  height: 85%;
+}
+
+.mid-title,
+.mid-title2 {
+  font-size: 1.3rem;
+  padding: 10px;
+}
+
+.mid-image {
+  padding: 10px 20px 20px 20px;
+  height: 80%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.mid-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+/* sidebar */
+
+.side-main {
+  margin: 20px 20px 20px 0;
+  height: 100%;
+  background-color: #1f2022;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.sidebar {
+  width: 25%;
+  height: 95%;
+  position: fixed;
+  left: 75%;
+  background-color: #191a1c;
+}
+
+.side-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+#sideclose {
+  display: none;
+}
+
+.side-main select {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  color: #929da5;
+  background-color: #191a1c;
+  height: 35px;
+}
+
+.side-categories {
+  padding: 12px;
+}
+
+.side-muscle {
+  padding: 12px;
+}
+
+.side-search {
+  display: flex;
+  padding: 12px;
+}
+.side-search input {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  height: 35px;
+  color: #929da5;
+  background-color: #191a1c;
+}
+
+.side-section {
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  display: block;
+}
+.section-title {
+  border-top: 1px solid #929da5;
+  font-size: 0.8rem;
+  padding: 12px;
+}
+.section-title p {
+  margin: 0;
+}
+
+.side-exercise {
+  display: flex;
+  padding: 12px;
+}
+
+.ex-image img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100px;
+  margin: 8px;
+}
+
+.ex-muscle {
+  font-size: 0.9rem;
+  color: #929da5;
+}
+
+/* after select exercise */
+.mid2{
+  display: flex;
+  flex-direction: column;
+}
+.main-mid2 {
+  width: 60%;
+  height: 100%;
+  background-color: #191a1c;
+  position: fixed;
+  display: none;
+  left: 15%;
+}
+
+.mid2-title {
+  margin: 10px 0 0 20px;
+  font-size: 1.5rem;
+}
+
+.mid-image2 {
+  padding: 10px 20px 20px 20px;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.mid-image2 video {
+  width: 60%;
+  border-radius: 15px;
+}
+.mid-image2 img {
+  width: 6  0%;
+  border-radius: 15px;
+}
+
+.mid2-info {
+  width: 100%;
+  flex-shrink: 1;
+  overflow-y: scroll;
+  padding: 10px;
+  border-top: 2px solid #929da5;
+}
+
+.mid2-info p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.mid2-info  :nth-child(4){
+  font-size: 1rem;
+  color: #929da5;
+}
+.mid2-info span {
+  margin-left: 5px;
+  font-size: 1rem;
+  color: #929da5;
+}
+
+/* responsive website */
+
+/* phone */
+
+.res-sidenav {
+  height: 50px;
+  background-color: #1f2022;
+  display: none;
+}
+.rev-logo {
+  width: 4rem;
+  height: 100%;
+  background-color: transparent;
+}
+.rev-logo img {
+  width: 50px;
+}
+.rev-button {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 100%;
+}
+.rev-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.sidebar-button {
+  width: 100%;
+  height: 4%;
+  display: none;
+  margin: 20px 10% 0px 10%;
+}
+
+.sbtn {
+  width: 80%;
+  height: 100%;
+  background-color: rgb(18, 67, 228);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 850px) {
+  .sidenav {
+    display: block !important;
+  }
+  .sidebar {
+    display: block !important;
+  }
+  .sidebar-button {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 0.8rem;
+  }
+
+  .res-sidenav {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sidenav {
+    height: 100%;
+    width: 70%;
+    display: none;
+  }
+
+  .side-main {
+    margin: 0;
+    height: 100%;
+    background-color: #1f2022;
+  }
+  .side-exercise {
+    padding: 5px;
+  }
+  .sidebar {
+    border-radius: 15px;
+    border: #929da5 solid 2px;
+    display: none;
+    width: 90%;
+    height: 80% !important;
+    position: fixed;
+    left: 5%;
+    margin: 20px 0 0 0;
+  }
+  #sideclose {
+    display: block;
+  }
+  .main-title {
+    display: none;
+  }
+  .main-mid,
+  .main-mid2,
+  .routines-main-mid {
+    width: 100%;
+    left: 0;
+  }
+  .mid-image2 video {
+    width: 100%;
+    border-radius: 15px;
+    margin-left: 0;
+  }
+  .mid2-info {
+    font-size: 1rem;
+  }
+  .sidebar-button {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 850px) and (min-width: 550px) {
+  html {
+    font-size: 0.8rem;
+  }
+  .sidebar-button {
+    display: none !important;
+  }
+  .res-sidenav {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sidenav {
+    height: 100%;
+    width: 30%;
+    display: none;
+  }
+  .sidebar {
+    width: 30%;
+    left: 70%;
+    display: block !important;
+  }
+
+  .main-mid,
+  .main-mid2,.routines-main-mid {
+    width: 70%;
+    left: 0;
+  }
+}
